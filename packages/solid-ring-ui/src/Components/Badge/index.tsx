@@ -1,8 +1,7 @@
-
-
+import css from "./Badge.module.scss"
 
 export function Badge() {
     return (
-        <h1>Ok</h1>
+        <h1 class={css.badge}>Ok</h1>
     )
 }
