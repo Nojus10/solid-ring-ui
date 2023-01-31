@@ -3,12 +3,14 @@
     "strict": true,
     "target": "ESNext",
     "module": "ESNext",
+    "baseUrl": "src",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "noEmit": true,
+    "declaration": true,
     "isolatedModules": true
   }
 }

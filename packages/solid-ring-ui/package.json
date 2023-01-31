@@ -1,20 +1,33 @@
 {
   "name": "solid-ring-ui",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "types": "dist/src/index.d.ts",
+  "main": "dist/solid-ring-ui.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./dist/style.css": {
+      "import": "./dist/style.css"
+    },
+    ".": {
+      "import": "./dist/solid-ring-ui.es.js"
+    }
+  },
   "devDependencies": {
     "sass": "^1.56.1",
     "vite": "^3.0.9",
+    "vite-plugin-dts": "^1.7.1",
     "vite-plugin-solid": "^2.4.0"
   },
   "dependencies": {
+    "@jetbrains/icons": "^3.20.0",
     "solid-js": "^1.5.1"
   }
 }
